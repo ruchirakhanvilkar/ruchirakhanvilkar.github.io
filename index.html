@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:doc="http://xsltsl.org/xsl/documentation/1.0" xmlns:dt="http://xsltsl.org/date-time" xmlns:str="http://xsltsl.org/string" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-16">
+    <title>Ruchira Khanvilkar</title>
+    <style type="text/css" id="static">
+        /* Reset browser defaults *//* --------------------------------------------------------------
+    Reset default browser CSS.
+    Based on work by Eric Meyer:
+    * http://meyerweb.com/eric/tools/css/reset/index.html
+    -------------------------------------------------------------- *//* v1.0 | 20080212 */html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+        body
+        {
+            line-height: 1;
+            background: #FFF;
+            text-align: left;
+			font-feature-settings: "liga" 0; 
+			-moz-font-feature-settings: "liga" off;
+        }
+        ol, ul
+        {
+            list-style: none;
+        }
+        blockquote, q
+        {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after, q:before, q:after
+        {
+            content: '';
+            content: none;
+        }
+        /* remember to define focus styles! */:focus
+        {
+            outline: 0;
+        }
+        /* remember to highlight inserts somehow! */ins
+        {
+            text-decoration: none;
+        }
+        del
+        {
+            text-decoration: line-through;
+        }
+        /* tables still need 'cellspacing="0"' in the markup */table
+        {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        a img
+        {
+            border: none;
+        }
+        /* Typography */ul, li
+        {
+            list-style-type: disc;
+            margin: 0 0 0 10px;
+            padding: 0;
+        }
+        ul li
+        {
+            margin: 0 0 0 13px;
+        }
+        .clear
+        {
+            clear: both;
+            height: 0;
+        }
+        br.clear
+        {
+            line-height: 0;
+        }
+        div.name
+        {
+            font-size: 15px;
+            line-height: 17px;
+            font-weight: bold;
+            padding: 0;
+            text-align: right;
+            text-transform: uppercase;
+        }
+        div.name span.lName
+        {
+            color: #C00000;
+        }
+        div.logo
+        {
+            display: none;
+        }
+        div.paragraph
+        {
+            position: relative;
+        }
+        div.heading
+        {
+            clear: both;
+            font-weight: bold;
+        }
+        div.address
+        {
+            position: relative;
+            text-align: right;
+            font-size: 0.917em;
+            line-height: 1.25em;
+            margin-top: 11px;
+            background-color: #000;
+            font-weight: bold;
+            padding: 4px 5px;
+            color: #FFF;
+            word-wrap: break-word;
+        }
+        div.address2
+        {
+            position: relative;
+            text-align: left;
+            font-size: 0.917em;
+            line-height: 1.25em;
+        }
+        span.jobtitle, span.companyname, span.degree
+        {
+            font-weight: bold;
+        }
+        
+        .datesWrapper
+        {
+            float: right;
+        }
+        .table_wrapper
+        {
+            width: 100%;
+            margin-top: 0;
+        }
+        table.twocol td
+        {
+            width: 50%;
+        }
+        table.skills, table.twocol {width: 100%;}
+        
+        table.skills th, table.skills td
+        {
+            width: 20%;
+            text-align: center;
+        }
+        table.skills th
+        {
+            text-decoration: underline;
+        }
+        table.skills .skillname, table.skills .skillrating
+        {
+            text-align: left;
+            width: 35%;
+        }
+        table.skills .skillrating
+        {
+            width: 20%;
+        }
+        table.skills .skillyears, table.skills .skilllast
+        {
+            width: 19%;
+        }
+        table.skills .pad1
+        {
+            width: 5%;
+        }
+        table.skills .pad2, table.skills .pad3
+        {
+            width: 1%;
+        }
+        span.paddedline
+        {
+            display: block;
+        }
+        .nodisplay
+        {
+            display: none;
+        }
+        div.bottomborder
+        {
+            border-color: #C00000 !important;
+        }
+        div#document table {width: 100%;}
+        td.twocol_2
+        {
+            border-left: 1px solid #FEFDFD;
+        }
+        /*Added by Amit for LCMAIN-955*/
+    .adnlLnks li:before{ vertical-align: bottom;}
+    .adnlLnks li.first:before {content: "";}
+    div.adnlLnks{text-align: center}
+    .adnlLnks li {display:inline!important;}
+    /*FIX for FORCEFULLY making left margin ZERO for CL*/
+    div#document .sectionCL .paragraph {margin-top: 0!important;}
+    </style>
+    <style type="text/css" id="unparsed">
+    div#document {line-height: {$FTLH}px;}
+    div#document table {line-height: {$FTLH}px;}
+    div#document.pagesize {width: {$DOCW}px;}
+    div#document.vmargins {padding-top: {$TBMR}px; padding-bottom: {$TBMR}px;}
+    div#document.hmargins {padding-left: {$LRMR}px; padding-right: {$LRMR}px;}
+    div#document .section {margin-top: {$SCSP}px;}
+    div#document div.firstsection {margin-top: 0;}
+    div#document div.SECTION_CNTC {margin-top: 0;}
+    div#document div.heading {margin-bottom: {$SHMB}px;}
+    div#document div.paragraph {margin-top: {$PSPC}px;}
+    div#document div.firstparagraph {margin-top: 0;}
+    div#document .singlecolumn, div#document .maincolumn {margin-left: {$PIND}px; width: {$MACW}px;}
+    .fontsize {font-size: {$FTSZ}px;}
+    .fontface {font-family: {$FTFC};}
+    div#document .bottomborder {border-bottom: {$LNWT}px solid;}
+    div#document div.sectiontitle {font-size: {$HDSZ}px; line-height: {$HDLH}px;}
+    div.name {font-size: {$NMSZ}px; line-height: {$NMLH}px;}
+    div.address {font-size: {$CISZ}px; line-height: {$CILH}px; margin-top: {$CIMT}px;}
+    div#document table.skills td {padding-top: {$TDMT}px;}
+
+    /*FIX for Re-calculating width of singlecolumn for CL*/
+    div#document .sectionCL .singlecolumn {margin-left: 0!important; width: 100%;}
+    div.address2 {font-size: {$FTSZ}px; line-height: {$FTLH}px;}
+  </style>
+    <style type="text/css" id="dynamic">
+    div#document {line-height: 13px;}
+    div#document table {line-height: 13px;}
+    div#document.pagesize {width: 562px;}
+    div#document.vmargins {padding-top: 12px; padding-bottom: 12px;}
+    div#document.hmargins {padding-left: 25px; padding-right: 25px;}
+    div#document .section {margin-top: 6px;}
+    div#document div.firstsection {margin-top: 0;}
+    div#document div.SECTION_CNTC {margin-top: 0;}
+    div#document div.heading {margin-bottom: 2px;}
+    div#document div.paragraph {margin-top: 5px;}
+    div#document div.firstparagraph {margin-top: 0;}
+    div#document .singlecolumn, div#document .maincolumn {margin-left: 0px; width: 562px;}
+    .fontsize {font-size: 11px;}
+    .fontface {font-family: "Times New Roman", Times, serif;}
+    div#document .bottomborder {border-bottom: 1px solid;}
+    div#document div.sectiontitle {font-size: 13px; line-height: 15px;}
+    div.name {font-size: 29px; line-height: 33px;}
+    div.address {font-size: 10px; line-height: 14px; margin-top: 2px;}
+    div#document table.skills td {padding-top: 2px;}
+
+    /*FIX for Re-calculating width of singlecolumn for CL*/
+    div#document .sectionCL .singlecolumn {margin-left: 0!important; width: 100%;}
+    div.address2 {font-size: 11px; line-height: 13px;}
+  </style>
+  </head>
+  <body>
+    <div id="document" class="fontsize fontface vmargins hmargins linespacing pagesize">
+      <div id="SECTION_PICT890000213" class=" firstsection" style="padding-top:0px;"></div>
+      <div id="SECTION_NAME890000205" class="section" style="padding-top:0px;">
+        <div id="PARAGRAPH_890000205_1_583158407" class="paragraph PARAGRAPH_NAME firstparagraph">
+                <div class="name">
+                    <span class="field" id="890000205FNAM1">Ruchira</span> <span>
+                    </span> <span class="field lName" id="890000205LNAM1">Khanvilkar</span>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_CNTC890000206" class="section SECTION_CNTC" style="padding-top:0px;">
+        <div id="PARAGRAPH_890000206_1_583158408" class="paragraph PARAGRAPH_CNTC firstparagraph">
+                <div class="address">
+                    <span class="field" id="890000206STRT1">513 886 5527          3307 Jefferson Avenue, Apt 5</span><span>,
+                    </span><span class="spaced field" id="890000206CITY1">Cincinnati</span><span>,
+                    </span><span class="spaced field" id="890000206STAT1">OH</span><span>
+                    </span><span class="spaced field" id="890000206ZIPC1">45220</span> <span>
+                        | </span><span class="field" id="890000206HPHN1"></span> <span>(C)
+                            </span><span class="field" id="890000206CPHN1">5138865527</span> <span>
+                                | </span><span dependency="EMAI" class="field" id="890000206EMAI1">khanvirs@mail.uc.edu</span>
+                                 
+                    
+                    
+                   
+                    
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_ALNK890012699" class="section SECTION_ALNK" style="padding-top:0px;">
+        <div id="PARAGRAPH_890012699_1_583167624" class="paragraph firstparagraph">
+                <div class="adnlLnks singlecolumn">
+                    <ul>
+                        <li class="first"><span class="field" id="890012699LNK11"><a target="_blank" href="https://issuu.com/ruchirakhanvilkar/docs/ruchira_portfolio_2016">https://issuu.com/ruchirakhanvilkar/docs/ruchira_portfolio_2016</a></span></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_HILT890000210" class="section" style="padding-top:0px;">
+        <div class="heading bottomborder">
+                <div id="SECTNAME_HILT890000210" class="sectiontitle">Skills</div>
+            </div>
+        <div id="PARAGRAPH_890000210_1_583158419" class="paragraph firstparagraph">
+                <div class="singlecolumn maincolumn">
+                    <table class="twocol">
+                        <tr>
+                            <td class="field twocol_1" id="890000210SKC11"><ul><li>Softwares        : AutoCAD, Google Sketchup, Adobe Illustration, Adobe Photoshop, Microsoft Office <strong>Advanced</strong></li><li>ArcGIS, Revit Architecture, Lumion, V-ray, Adobe InDesign     <strong>Intermediate</strong></li><li>Rhino, Corel Draw  <strong>Basic</strong></li><li>Research Interest: Transportation Systems, Cartography, Remote Sensing, Environmental Sustainability, Signage And Architecture, Community Development, Data Analysis, Building Construction Technology</li></ul></td>
+                            <td class="field twocol_2" id="890000210SKC21"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_EXPR890000207" class="section" style="padding-top:0px;">
+        <div class="heading bottomborder">
+                <div id="SECTNAME_EXPR890000207" class="sectiontitle">Work History</div>
+            </div>
+        <div id="PARAGRAPH_890000207_1_583158409" class="paragraph firstparagraph">
+                <div class="singlecolumn">
+                    <span class="paddedline"><span class="jobtitle" id="890000207JTIT1">Graduate Assistant</span><span></span> <span class="datesWrapper">
+                            <span class="jobdates" format="%m/%Y" id="890000207JSTD1">08/2016</span><span>
+                                to </span><span class="jobdates" format="%m/%Y" id="890000207EDDT1">Current</span><br>
+                        </span></span><span class="paddedline"><span class="companyname" id="890000207COMP1">Niehoff Urban Studio, University of Cincinnati</span><span> – </span>
+                            <span class="joblocation jobcity" id="890000207JCIT1">Cincinnati</span><span>,
+                            </span><span class="joblocation jobstate" id="890000207JSTA1">OH</span><br>
+                        </span><span class="jobline" id="890000207JDES1"><ul><li>Coordinated with other data analysts and created and integrated GIS data layers and digitized new data using
+        a variety of softwares for the urban development mapping project of renovated buildings in Cincinnati
+</li><li>        Developed spatial data overlays and comparisons tests for accuracy of spatial data components of parcel
+        polygons and datasets and performed GIS studies concerning public health services within neighborhood
+</li><li>        Maintain studio's website, update all the recent projects and events on regular basis using HTML language.</li></ul><br><br></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_890000207_2_583169161" class="paragraph">
+                <div class="singlecolumn">
+                    <span class="paddedline"><span class="jobtitle" id="890000207JTIT2">Intern Architect</span><span></span> <span class="datesWrapper">
+                            <span class="jobdates" format="%m/%Y" id="890000207JSTD2">12/2013</span><span>
+                                to </span><span class="jobdates" format="%m/%Y" id="890000207EDDT2">03/2014</span><br>
+                        </span></span><span class="paddedline"><span class="companyname" id="890000207COMP2">Planning Systems Architects</span><span> – </span>
+                            <span class="joblocation jobcity" id="890000207JCIT2">Mumbai</span><span>,
+                            </span><span class="joblocation jobstate" id="890000207JSTA2">India</span><br>
+                        </span><span class="jobline" id="890000207JDES2"><br></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_890000207_3_583158410" class="paragraph">
+                <div class="singlecolumn">
+                    <span class="paddedline"><span class="jobtitle" id="890000207JTIT3">Junior Architect</span><span></span> <span class="datesWrapper">
+                            <span class="jobdates" format="%m/%Y" id="890000207JSTD3">04/2014</span><span>
+                                to </span><span class="jobdates" format="%m/%Y" id="890000207EDDT3">06/2016</span><br>
+                        </span></span><span class="paddedline"><span class="companyname" id="890000207COMP3">Planning Systems Architects</span><span> – </span>
+                            <span class="joblocation jobcity" id="890000207JCIT3">Mumbai</span><span>,
+                            </span><span class="joblocation jobstate" id="890000207JSTA3">India</span><br>
+                        </span><span class="jobline" id="890000207JDES3"><ul><li>
+ 
+  
+  Projects:
+  
+  
+   
+  
+  
+   
+  
+ 
+ 
+  
+   
+</li><li>  
+  
+  Commercial :
+  
+  
+  EENS LTD.
+  Mall
+  
+  
+  Nairobi, Kenya
+  
+ 
+ 
+  
+   
+</li><li>  
+  
+  Community
+  Development :
+  
+  
+  Satsang
+  Community Center
+  
+  
+  Bhuj, India
+  
+ 
+ 
+  
+   
+</li><li>  
+  
+  Industrial :
+  
+  
+  Label and flexible packaging factory for ADPAK
+  international
+  
+  
+  Juja,
+  Kenya
+  
+ 
+ 
+  
+   
+  
+  
+  </li><li>Residential :
+  
+  
+  Colony of
+  Bungalows at Kitisuru
+  
+  
+  Nairobi, Kenya
+  
+ 
+
+
+ 
+</li><li>
+Drew up costs and
+schedules associated with construction projects, conducted research for
+Commercial and Industrial architectural projects, responsible for 3D and 2D
+designs and site inspections as per requirements 
+
+ </li><li>
+
+Co-ordinated with clients and MEP consultants and reviewed
+architectural drawings for potential conflict with MEP drawings, contributed
+and coordinated for design problems in design and construction phases of
+projects </li><li>
+
+Built CAD drawings
+( Presentation Drawings, Municipal Approval Drawings, Services and Tender
+Drawings ) <br></li></ul><br><br></span>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_EDUC890000208" class="section" style="padding-top:0px;">
+        <div class="heading bottomborder">
+                <div id="SECTNAME_EDUC890000208" class="sectiontitle">Education</div>
+            </div>
+        <div id="PARAGRAPH_890000208_1_583158413" class="paragraph firstparagraph">
+                <div class="singlecolumn">
+                    <span class="paddedline"><span class="degree" id="890000208DGRE1">Master of Community Planning</span><span>: </span><span class="programline" id="890000208STUY1">Urban and Regional / City  Planning</span><span></span>
+                        <span class="datesWrapper"><span class="jobdates" id="890000208GRYR1">Current</span> </span>
+                    </span><span class="paddedline"><span class="companyname companyname_educ" id="890000208SCHO1">University of Cincinnati</span><span> </span><span>-
+                        </span><span class="joblocation jobcity" id="890000208SCIT1">Cincinnati</span><span>,
+                        </span><span class="joblocation jobstate" id="890000208SSTA1">OH</span> </span><span class="paddedline"><span class="field" id="890000208GRPA1"></span>
+                        </span><span class="field" id="890000208FRFM1"><br></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_890000208_2_583158414" class="paragraph">
+                <div class="singlecolumn">
+                    <span class="paddedline"><span class="degree" id="890000208DGRE2">Bachelor of Architecture</span><span>: </span><span class="programline" id="890000208STUY2">Architecture</span><span></span>
+                        <span class="datesWrapper"><span class="jobdates" id="890000208GRYR2">June  2014</span> </span>
+                    </span><span class="paddedline"><span class="companyname companyname_educ" id="890000208SCHO2">Universit of Mumbai</span><span> </span><span>-
+                        </span><span class="joblocation jobcity" id="890000208SCIT2">Mumbai</span><span class="joblocation jobstate" id="890000208SSTA2"></span> </span><span class="paddedline"><span class="field" id="890000208GRPA2"></span>
+                        </span><span class="field" id="890000208FRFM2">Graduate Incentive Award          July 2016<br></span>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_CUST890012698" class="section" style="padding-top:0px;">
+        <div class="heading bottomborder">
+                <div id="SECTNAME_CUST890012698" class="sectiontitle">Activities</div>
+            </div>
+        <div id="PARAGRAPH_890012698_1_583167968" class="paragraph firstparagraph">
+                <div class="field singlecolumn" id="890012698FRFM1"><ul><li>
+ 
+  
+  Participated in ULI Studio Competition in a
+  team of 5 students from the Real Estate, Cincinnati, OH, 2016 </li></ul><p>       Architecture and Urban Planning fields              </p><ul><li>Professional
+  Membership: Council of Architecture - India, Registration no. CA/2014/65034 India, 2015</li><li>  
+ 
+ 
+  
+  Attended an International conference:
+  ‘Localization within Globalization‘ India,
+  2014
+</li><li>  
+ 
+ 
+  
+  NASA (National Association of Schools of
+  Architecture) competitions: India, 2013</li></ul><p>       Participated in REUBENS entry in a team of 15
+  students, shortlisted in the top 10 entries                    </p><ul><li>Attended the Training program: ‘Cost effective
+  architecture' at Laurie Baker centre  India,
+  2011 </li></ul></div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
